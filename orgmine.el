@@ -1222,7 +1222,6 @@ such as \"#+PROPERTY: om_default_todo NEW\".
 If the property is not found, the first TODO keyword of `org-todo-keywords-1'
 is returned."
   (or (cdr (assoc-string "om_default_todo" org-keyword-properties))
-      orgmine-default-todo-keyword
       (nth 0 org-todo-keywords-1)
       1))
 
