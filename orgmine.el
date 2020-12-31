@@ -108,7 +108,7 @@
   "Drawer name to hold journal details."
   :group 'orgmine)
 
-(defcustom orgmine-note-block-begin "#+begin_src gfm"
+(defcustom orgmine-note-block-begin "#+begin_src textile"
   ""
   :group 'orgmine)
 
@@ -1389,7 +1389,7 @@ Return plist whose key is KEY and its value is equal to VALUE."
     (forward-line)
     (unless (bolp) (insert "\n"))
     (open-line 1)
-    (insert orgmine-note-block-begin)	; "#+begin_src gfm"
+    (insert orgmine-note-block-begin)	; "#+begin_src textile"
     (org-indent-line)
     (let ((indent (org-get-indentation))
 	  pos)
