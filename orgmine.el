@@ -2851,7 +2851,7 @@ found in the region from BEG to END."
        "om_me property not found. define it by \"#+PROPERTY om_me\" line"))
     (orgmine-show-assigned-to me todo-only)))
 
-(defun orgmine-show-assigned-to (who todo-only)
+(defun orgmine-show-author (who todo-only)
   "Show entries author of WHO."
   (interactive (list (org-icompleting-read
 		      "Author: "
