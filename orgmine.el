@@ -2651,7 +2651,7 @@ found in the region from BEG to END."
   (let ((pos (point)))
     (goto-char (point-min))
     (if (orgmine-find-issue id (point-max))
-	(set-mark pos)
+	(push-mark pos)
       (goto-char pos)
       (error "Issue#%s not found" id))))
 
@@ -2680,7 +2680,7 @@ found in the region from BEG to END."
   (let ((pos (point)))
     (goto-char (point-min))
     (if (orgmine-find-version id (point-max))
-	(set-mark pos)
+	(push-mark pos)
       (goto-char pos)
       (error "Version#%s not found" id))))
 
